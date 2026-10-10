@@ -4,10 +4,14 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout>
 	<main>
-		<h1>Tarjni Jotaniya</h1>
+		<h1>Hello! 👋 I'm Tarjni</h1>
 		<p>
-			NY-based experience designer, researcher, and strategist creating frictionless
-			human-centered experiences; Previously at Meta and Klaviyo.
+			NY-Based Researcher &amp; strategist with experience leading foundational, qualitative, and
+			mixed-methods research that shapes product vision and strategy 6–12 months ahead.
+		</p>
+		<p>
+			I enjoy using research and design to understand how technology shapes the way people live,
+			work, and connect, and turn complex ideas into tangible experiences. 🌏
 		</p>
 	</main>
 </Layout>
@@ -22,6 +26,7 @@ import Layout from '../layouts/Layout.astro';
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		text-align: center;
 	}
 
 	h1 {
@@ -34,5 +39,9 @@ import Layout from '../layouts/Layout.astro';
 		margin: 0;
 		font-size: 1.125rem;
 		line-height: 1.6;
+	}
+
+	p + p {
+		margin-top: 1.5rem;
 	}
 </style>
