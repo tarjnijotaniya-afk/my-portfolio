@@ -3,26 +3,36 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<main>
-		<h1>Hello! 👋 I'm Tarjni</h1>
-		<p>
-			NY-Based Researcher &amp; strategist with experience leading foundational, qualitative, and
-			mixed-methods research that shapes product vision and strategy 6–12 months ahead.
-		</p>
-		<p>
-			I enjoy using research and design to understand how technology shapes the way people live,
-			work, and connect, and turn complex ideas into tangible experiences. 🌏
-		</p>
-	</main>
+	<div class="page">
+		<main>
+			<h1>Hello! 👋 I'm Tarjni</h1>
+			<p>
+				NY-Based Researcher &amp; strategist with experience leading foundational, qualitative, and
+				mixed-methods research that shapes product vision and strategy 6–12 months ahead.
+			</p>
+			<p>
+				I enjoy using research and design to understand how technology shapes the way people live,
+				work, and connect, and turn complex ideas into tangible experiences. 🌏
+			</p>
+		</main>
+		<footer>tarjni©2026</footer>
+	</div>
 </Layout>
 
 <style>
-	main {
+	.page {
 		box-sizing: border-box;
-		max-width: 40rem;
 		min-height: 100%;
+		padding: 2rem 1rem 1rem;
+		display: flex;
+		flex-direction: column;
+	}
+
+	main {
+		flex: 1;
+		width: 100%;
+		max-width: 40rem;
 		margin: 0 auto;
-		padding: 2rem 1rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -43,5 +53,12 @@ import Layout from '../layouts/Layout.astro';
 
 	p + p {
 		margin-top: 1.5rem;
+	}
+
+	footer {
+		align-self: flex-end;
+		margin-top: 2rem;
+		font-size: 0.75rem;
+		color: #6b6b6b;
 	}
 </style>
