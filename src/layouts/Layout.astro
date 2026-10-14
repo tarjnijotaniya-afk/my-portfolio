@@ -1,4 +1,6 @@
 ---
+import { Font } from 'astro:assets';
+
 interface Props {
 	title?: string;
 	description?: string;
@@ -21,6 +23,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 		<meta name="generator" content={Astro.generator} />
+		<Font cssVariable="--font-rubik" preload />
 		<title>{title}</title>
 		<meta name="description" content={description} />
 		<link rel="canonical" href={canonicalURL} />
@@ -45,7 +48,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 		margin: 0;
 		width: 100%;
 		height: 100%;
-		font-family: system-ui, sans-serif;
+		font-family: var(--font-rubik);
 		color: #1a1a1a;
 		background: #fff;
 	}
